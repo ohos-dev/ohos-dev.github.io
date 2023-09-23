@@ -1,0 +1,16 @@
+{
+  "name": "ohos-dev",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "sass": "^1.68.0",
+    "vitepress": "^1.0.0-rc.15",
+    "vue": "^3.3.4"
+  }
+}
