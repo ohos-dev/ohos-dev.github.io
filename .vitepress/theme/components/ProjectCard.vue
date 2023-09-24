@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useData, useRoute, useRouter, withBase } from "vitepress"
 import VPLink from "vitepress/dist/client/theme-default/components/VPLink.vue"
 import { computed } from "vue"
 export interface Project {
@@ -14,7 +15,11 @@ const props = defineProps<Project>()
 /**
  * 绝对路径的链接，用于向用户展示
  */
-const absLink = computed(() => new URL(props.link, location.href).href)
+const absLink = computed(() => {
+  if (!import.meta.env.SSR) {
+    return new URL(props.link, location.href).href
+  }
+})
 </script>
 
 <template>

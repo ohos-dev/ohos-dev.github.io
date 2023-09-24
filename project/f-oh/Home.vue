@@ -35,13 +35,15 @@ const derivativeProjects: Project[] = [
     name: "F-OH Web",
     link: "https://gitee.com/ohos-dev/F-OH-Web",
     icon: FOHLogo,
-    details: "使用 Bootstrap + Flask 实现的前后端一体的 F-OH Web 版，并提供接口、应用上传和管理等功能，目前主要由 @myyauyau 来维护",
+    details:
+      "使用 Bootstrap + Flask 实现的前后端一体的 F-OH Web 版，并提供接口、应用上传和管理等功能，目前主要由 @myyauyau 来维护",
   },
   {
     name: "F-OH PWA",
     link: "https://gitee.com/ohos-dev/F-OH-PWA",
     icon: FOHLogo,
-    details: "F-OH 的第三方 PWA 版本，并提供基于 Tauri 的客户端，目前主要由 @Jesse205 来维护",
+    details:
+      "F-OH 的第三方 PWA 版本，并提供基于 Tauri 的客户端，目前主要由 @Jesse205 来维护",
   },
 ]
 </script>

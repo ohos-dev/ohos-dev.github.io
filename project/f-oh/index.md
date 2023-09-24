@@ -9,7 +9,8 @@ hero:
   text: OpenHarmony 平台上 FOSS 的应用中心
   # tagline: OpenHarmony 平台上 FOSS（Free and Open Source Software，自由开源软件）的应用中心，并提供下载安装支持
   image:
-    src: ./images/logo.svg
+    # 暂时只能使用public目录内的资源
+    src: /images/logo.svg
     alt: F-OH
   actions:
     - theme: brand
@@ -38,7 +39,7 @@ features:
 ---
 
 <script setup lang="ts">
-  import Home from './Home.vue';
+  import Home from './Home.vue'
 </script>
 
 <Home />
