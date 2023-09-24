@@ -12,9 +12,6 @@ hero:
     alt: OHOS Dev
   actions:
     - theme: brand
-      text: 项目
-      link: /api-examples
-    - theme: brand
       text: 项目规范
       link: /devguide
 
@@ -42,7 +39,6 @@ features:
 OpenHarmony正在茁壮成长，虽然从API9开始拥有完备的应用开发体系，但是开源应用软件却少之又少，我认为其中一个主要原因在于目前官方支持和三方移植适配的标准系统开发板太少且价格高昂，如果没有廉价的开发板或其他代替方案（如旧手机移植），没有开发者参与开源软件的共建，那么OpenHarmony的整个生态依旧残缺不全...
 
 随着时间的推移，2023年HDC大会的召开，HarmonyOS Next 预览版的发布，似乎更明确了下一步的方向，相信在不久的将来，我们能看到一个焕然一新的开源鸿蒙生态，OpenHarmony未来已来！
-
 
 ## 联系
 
