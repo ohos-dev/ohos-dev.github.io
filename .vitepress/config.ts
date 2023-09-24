@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress"
-import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath, URL } from "node:url"
 
 const base = "/"
 
@@ -33,6 +33,9 @@ export default defineConfig({
         link: "/devguide",
       },
     ],
+    footer: {
+      message: "组织创建于：2023-02-27",
+    },
 
     sidebar: {
       "/project/": [
@@ -93,10 +96,10 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        '@': fileURLToPath(new URL('./theme', import.meta.url)),
-        'vue-i18n': 'vue-i18n/dist/vue-i18n.cjs.js'
+        "@": fileURLToPath(new URL("./theme", import.meta.url)),
+        "vue-i18n": "vue-i18n/dist/vue-i18n.cjs.js",
       },
-      extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue']
+      extensions: [".js", ".json", ".jsx", ".mjs", ".ts", ".tsx", ".vue"],
     },
-  }
+  },
 })
