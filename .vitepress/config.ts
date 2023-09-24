@@ -30,7 +30,7 @@ export default defineConfig({
       },
       {
         text: "项目规范",
-        link: "https://gitee.com/ohos-dev/docs/blob/master/ProjectSpec.md",
+        link: "/devguide",
       },
     ],
 
