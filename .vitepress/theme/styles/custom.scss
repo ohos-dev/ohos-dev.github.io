@@ -7,30 +7,11 @@
  * Colors
  * -------------------------------------------------------------------------- */
 
- :root {
-  --vp-c-brand: #646cff;
-  --vp-c-brand-light: #747bff;
-  --vp-c-brand-lighter: #9499ff;
-  --vp-c-brand-lightest: #bcc0ff;
-  --vp-c-brand-dark: #535bf2;
-  --vp-c-brand-darker: #454ce1;
-  --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
-}
-
-/**
- * Component: Button
- * -------------------------------------------------------------------------- */
-
 :root {
-  --vp-button-brand-border: var(--vp-c-brand-light);
-  --vp-button-brand-text: var(--vp-c-white);
-  --vp-button-brand-bg: var(--vp-c-brand);
-  --vp-button-brand-hover-border: var(--vp-c-brand-light);
-  --vp-button-brand-hover-text: var(--vp-c-white);
-  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
-  --vp-button-brand-active-border: var(--vp-c-brand-light);
-  --vp-button-brand-active-text: var(--vp-c-white);
-  --vp-button-brand-active-bg: var(--vp-button-brand-bg);
+  --vp-c-brand-1: #00a7fa;
+  --vp-c-brand-2: #1ab2ff;
+  --vp-c-brand-3: #33bbff;
+  --vp-c-brand-soft: #33bbff48;
 }
 
 /**
@@ -39,16 +20,12 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #bd34fe 30%,
-    #41d1ff
-  );
+  --vp-home-hero-name-background: linear-gradient(90deg, #00a6f9, #81bd0a);
 
   --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #bd34fe 50%,
-    #47caff 50%
+    90deg,
+    #00a6f9,
+    #81bd0a
   );
   --vp-home-hero-image-filter: blur(40px);
 }
@@ -65,27 +42,49 @@
   }
 }
 
-/**
- * Component: Custom Block
- * -------------------------------------------------------------------------- */
-
-:root {
-  --vp-custom-block-tip-border: var(--vp-c-brand);
-  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
-  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+.VPContent.is-home {
+  .text {
+    font-size: 24px;
+    line-height: 24px;
+    @media (min-width: 640px) {
+      max-width: 576px;
+      line-height: 40px;
+      font-size: 32px;
+    }
+    @media (min-width: 960px) {
+      line-height: 48px;
+      font-size: 40px;
+    }
+  }
+  .tagline {
+    line-height: 28px;
+    font-size: 16px;
+    @media (min-width: 640px) {
+      line-height: 32px;
+      font-size: 20px;
+    }
+  }
 }
 
-.dark {
-  --vp-custom-block-tip-border: var(--vp-c-brand);
-  --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
-  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+//给主页的 Markdown 内容添加边距
+.VPHome .vp-doc.container {
+  position: relative;
+  padding: 0 24px;
+  margin: 0 auto;
+  max-width: 1152px;
+  box-sizing: content-box;
+  @media (min-width: 640px) {
+    padding: 0 48px;
+  }
+
+  @media (min-width: 960px) {
+    padding: 0 64px;
+  }
 }
 
-/**
- * Component: Algolia
- * -------------------------------------------------------------------------- */
-
-.DocSearch {
-  --docsearch-primary-color: var(--vp-c-brand) !important;
+// 全局启用链接图标
+.vp-doc.external-link-icon-enabled :is(.vp-doc a[href*='://'], .vp-doc a[target='_blank'])::after
+{
+  content: "";
+  color: currentColor;
 }
-

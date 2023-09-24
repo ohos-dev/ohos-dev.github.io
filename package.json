@@ -9,6 +9,7 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
+    "@types/node": "^20.6.4",
     "sass": "^1.68.0",
     "vitepress": "^1.0.0-rc.15",
     "vue": "^3.3.4"
