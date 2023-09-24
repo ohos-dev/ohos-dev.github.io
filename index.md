@@ -12,11 +12,11 @@ hero:
     alt: OHOS Dev
   actions:
     - theme: brand
-      text: 项目规范
-      link: https://gitee.com/ohos-dev/docs/blob/master/ProjectSpec.md
-    - theme: alt
-      text: API Examples
+      text: 项目
       link: /api-examples
+    - theme: brand
+      text: 项目规范
+      link: /devguide
 
 features:
   - icon: 🚄
@@ -43,11 +43,6 @@ OpenHarmony正在茁壮成长，虽然从API9开始拥有完备的应用开发�
 
 随着时间的推移，2023年HDC大会的召开，HarmonyOS Next 预览版的发布，似乎更明确了下一步的方向，相信在不久的将来，我们能看到一个焕然一新的开源鸿蒙生态，OpenHarmony未来已来！
 
-## 愿景
-
-- 更多的开发者参与OHOS开源应用软件的共建
-- 扩大OHOS系统和应用软件的生态和影响力
-- OHOS在未来的国产化技术覆盖领域中全面绽放
 
 ## 联系
 
