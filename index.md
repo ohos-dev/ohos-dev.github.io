@@ -59,6 +59,6 @@ OpenHarmony正在茁壮成长，虽然从API9开始拥有完备的应用开发�
 ## 导航
 
 - [项目规范](https://gitee.com/ohos-dev/docs/blob/master/ProjectSpec.md) `在组织内创建开源项目必看文档`
-- [项目统计]([./ProjectStatistics.md](https://gitee.com/ohos-dev/docs/blob/master/ProjectStatistics.md)) `组织内开源项目贡献统计`
+- [项目统计](https://gitee.com/ohos-dev/docs/blob/master/ProjectStatistics.md) `组织内开源项目贡献统计`
 
 </div>
