@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { useData, useRoute, useRouter, withBase } from "vitepress"
 import VPLink from "vitepress/dist/client/theme-default/components/VPLink.vue"
+import FOHIcon from "@/assets/images/foh.svg"
+import GieeIcon from "@/assets/images/gitee.svg"
 import { computed } from "vue"
 export interface Project {
   name: string
@@ -20,6 +21,34 @@ const absLink = computed(() => {
     return new URL(props.link, location.href).href
   }
 })
+
+interface DestinationConfig {
+  icon: string
+  name: string
+}
+/**
+ * 目的地配置
+ */
+const destinationConfig = computed<DestinationConfig | undefined>(() => {
+  if (!import.meta.env.SSR && absLink.value) {
+    console.log(new URL(absLink.value).hostname)
+    switch (new URL(absLink.value).hostname) {
+      case "gitee.com": {
+        return {
+          icon: GieeIcon,
+          name: "Gitee",
+        }
+      }
+      case "170.178.208.105": {
+        return {
+          icon: FOHIcon,
+          name: "OHOS Dev",
+        }
+      }
+    }
+  }
+  return undefined
+})
 </script>
 
 <template>
@@ -38,6 +67,15 @@ const absLink = computed(() => {
         </div>
       </div>
       <p v-if="details" class="details" v-html="details"></p>
+      <div class="space"></div>
+      <div class="foot">
+        <template v-if="destinationConfig">
+          <img class="icon" :src="destinationConfig.icon" />
+          <span class="name">{{ destinationConfig.name }}</span>
+        </template>
+        <span v-else class="name">查看</span>
+        <span class="openIcon" />
+      </div>
     </article>
   </VPLink>
 </template>
@@ -49,14 +87,17 @@ const absLink = computed(() => {
   border-radius: 12px;
   height: 100%;
   background-color: var(--vp-c-bg-soft);
+  transition: border-color 0.25s;
 
   // 去除a标签样式的影响
   font-weight: normal;
   color: unset;
   text-decoration: unset;
   text-underline-offset: unset;
-  transition: opacity;
-  transition: border-color 0.25s;
+
+  * {
+    line-height: normal;
+  }
 }
 a.ProjectCard:hover {
   color: unset;
@@ -64,8 +105,13 @@ a.ProjectCard:hover {
 }
 .box {
   padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
   .head {
     display: flex;
+    margin-bottom: 16px;
     .icon {
       width: 40px;
       height: 40px;
@@ -94,6 +140,45 @@ a.ProjectCard:hover {
   .details {
     margin: 0;
     color: var(--vp-c-text-1);
+    font-size: 14px;
+  }
+  .space {
+    flex-grow: 1;
+    -webkit-box-flex: 1;
+  }
+  .foot {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    opacity: 0.5;
+    margin-top: 8px;
+    transition: opacity 0.25s;
+    .icon {
+      height: 14px;
+      width: 14px;
+    }
+    .name {
+      margin-left: 4px;
+      font-size: 12px;
+      line-height: normal;
+    }
+    .openIcon {
+      margin-left: 4px;
+      width: 11px;
+      height: 11px;
+      transition: transform 0.25s;
+      background-color: currentColor;
+      -webkit-mask-image: url("@/assets/images/right.svg");
+      mask-image: url("@/assets/images/right.svg");
+    }
+  }
+  &:hover {
+    .foot {
+      opacity: 0.8;
+      .openIcon {
+        transform: translateX(4px);
+      }
+    }
   }
 }
 </style>
