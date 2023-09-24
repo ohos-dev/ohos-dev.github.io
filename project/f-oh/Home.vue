@@ -24,7 +24,7 @@ const projects: Project[] = [
   },
   {
     name: "F-OH Website",
-    link: "https://gitee.com/ohos-dev/f-oh-server",
+    link: "https://gitee.com/ohos-dev/f-oh-website",
     icon: FOHLogo,
     details: "F-OH 网站，包含文档、博客、精选应用等（待开发）",
   },
