@@ -12,6 +12,9 @@ hero:
     alt: OHOS Dev
   actions:
     - theme: brand
+      text: 项目概览
+      link: /project/
+    - theme: alt
       text: 项目规范
       link: /devguide
 

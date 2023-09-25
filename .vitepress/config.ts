@@ -9,8 +9,8 @@ export default defineConfig({
   description: "OHOS Dev Website",
   base,
   head: [["link", { rel: "icon", href: `${base}favicon.ico`, sizes: "any" }]],
-  lastUpdated:true,
-  lang: 'zh-CN',
+  lastUpdated: true,
+  lang: "zh-CN",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/images/logo.svg",
@@ -28,7 +28,10 @@ export default defineConfig({
       { text: "主页", link: "/" },
       {
         text: "项目",
-        items: [{ text: "F-OH", link: "/project/f-oh/" }],
+        items: [
+          { text: "项目概览", link: "/project/" },
+          { text: "F-OH", link: "/project/f-oh/" },
+        ],
       },
       {
         text: "项目规范",
@@ -39,14 +42,14 @@ export default defineConfig({
       message: "组织创建于：2023-02-27",
     },
     editLink: {
-      pattern:
-        "https://gitee.com/ohos-dev/ohos-dev/edit/master/:path",
+      pattern: "https://gitee.com/ohos-dev/ohos-dev/edit/master/:path",
       text: "在 Gitee 上编辑此页面",
     },
     sidebar: {
       "/project/": [
         {
           text: "项目",
+          link: "/project/",
           items: [
             {
               text: "F-OH",
