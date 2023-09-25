@@ -9,6 +9,8 @@ export default defineConfig({
   description: "OHOS Dev Website",
   base,
   head: [["link", { rel: "icon", href: `${base}favicon.ico`, sizes: "any" }]],
+  lastUpdated:true,
+  lang: 'zh-CN',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/images/logo.svg",
@@ -36,7 +38,11 @@ export default defineConfig({
     footer: {
       message: "组织创建于：2023-02-27",
     },
-
+    editLink: {
+      pattern:
+        "https://gitee.com/ohos-dev/ohos-dev/edit/master/:path",
+      text: "在 Gitee 上编辑此页面",
+    },
     sidebar: {
       "/project/": [
         {
@@ -52,7 +58,6 @@ export default defineConfig({
         },
       ],
     },
-
     socialLinks: [
       {
         icon: {
