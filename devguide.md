@@ -21,10 +21,11 @@
     ## 修改说明（可选）
     ## 开发环境
     ## 截图预览
-    （[拉取截图.bat](https://gitee.com/ohos-dev/hdc-shell-scripts/blob/master/%E6%8B%89%E5%8F%96%E6%89%8B%E6%9C%BA%E6%88%AA%E5%9B%BE%E7%9B%AE%E5%BD%95.bat)，压缩推荐：[图压](https://tuya.xinxiao.tech)）
     ## 视频演示（可选）
     ```
-  - 如有上述未描述到的请自行调整
+    [拉取截图.bat](https://gitee.com/ohos-dev/hdc-shell-scripts/blob/master/%E6%8B%89%E5%8F%96%E6%89%8B%E6%9C%BA%E6%88%AA%E5%9B%BE%E7%9B%AE%E5%BD%95.bat)，压缩推荐：[图压](https://tuya.xinxiao.tech)
+
+- 如有上述未描述到的请自行调整
 - 其他规范
   - 尽量发布安装包，方便大家能直接下载hap
   - build-profile.json5 的 `signingConfigs` 无需提交

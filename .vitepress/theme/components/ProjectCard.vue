@@ -2,6 +2,7 @@
 import VPLink from "vitepress/dist/client/theme-default/components/VPLink.vue"
 import FOHIcon from "@/assets/images/foh.svg"
 import GieeIcon from "@/assets/images/gitee.svg"
+import BiliIcon from "../../../images/bilibili.png"
 import { computed } from "vue"
 export interface Project {
   name: string
@@ -39,10 +40,20 @@ const destinationConfig = computed<DestinationConfig | undefined>(() => {
           name: "Gitee",
         }
       }
+      case "space.bilibili.com": {
+        return {
+          icon: BiliIcon,
+          name: "哔哩哔哩",
+        }
+      }
       case "170.178.208.105": {
         return {
           icon: FOHIcon,
           name: "OHOS Dev",
+        }
+      }
+      case "qun.qq.com": {
+        return {
         }
       }
     }

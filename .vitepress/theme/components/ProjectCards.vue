@@ -15,9 +15,14 @@ const grid = computed(() => {
     return "grid-3"
   } else if (length % 3 === 0) {
     return "grid-6"
-  } else if (length > 3) {
-    return "grid-4"
   }
+  else if (length === 4){
+    return "grid-4"
+  } 
+  else if (length > 3) {
+    return "grid-3"
+  }
+  
 })
 </script>
 <template>

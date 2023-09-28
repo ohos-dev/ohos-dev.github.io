@@ -44,15 +44,17 @@ OpenHarmony 正在茁壮成长，虽然从 API9 开始拥有完备的应用开�
 随着时间的推移，2023 年 HDC 大会的召开，HarmonyOS Next 预览版的发布，似乎更明确了下一步的方向，相信在不久的将来，我们能看到一个焕然一新的开源鸿蒙生态，OpenHarmony 未来已来！
 
 ## 联系
+<ProjectCards class="cards" :projects="projects" />
 
-- 码云组织：<https://gitee.com/ohos-dev>
-- 加入组织：点击 [组织首页](https://gitee.com/ohos-dev) 右上角的“申请加入组织”按钮
-- 哔哩哔哩：<https://space.bilibili.com/74433635>
-- 企鹅群组：752399947
+<script setup lang="ts">
+    import ProjectCards from "@/components/ProjectCards.vue"
+    import FOHLogo from "./public/images/logo.svg"
+    import projects from './contacts.ts'
+</script>
 
-## 导航
-
-- [项目规范](https://gitee.com/ohos-dev/docs/blob/master/ProjectSpec.md) `在组织内创建开源项目必看文档`
-- [项目统计](https://gitee.com/ohos-dev/docs/blob/master/ProjectStatistics.md) `组织内开源项目贡献统计`
-
+<style lang="scss">
+    .cards {
+        margin-top: 16px;
+    }
+</style>
 </div>
