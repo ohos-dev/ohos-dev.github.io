@@ -61,7 +61,7 @@ const destinationConfig = computed<DestinationConfig | null>(() => {
     :alt="name">
     <article class="box">
       <div class="head">
-        <img class="icon" :src="icon" :alt="icon" />
+        <img class="icon" :src="icon" />
         <div class="headRight">
           <span class="name" v-html="name"></span>
           <span class="link" :title="absLink">{{ absLink }}</span>
