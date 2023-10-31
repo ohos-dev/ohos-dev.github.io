@@ -15,7 +15,7 @@
   - 分辨率 256 * 256 起步，形状最好是圆角方形
 - README格式（可参考：[DeviceInfo](https://gitee.com/ohos-dev/device-info)、[BrowserCE](https://gitee.com/ohos-dev/browser-ce)）
     ```md
-    ## 项目名称
+    # 项目名称
     应用图标
     ## 项目介绍
     ## 修改说明（可选）
