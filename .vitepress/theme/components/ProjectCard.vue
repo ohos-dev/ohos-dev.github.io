@@ -31,7 +31,6 @@ interface DestinationConfig {
  */
 const destinationConfig = computed<DestinationConfig | null>(() => {
   if (!import.meta.env.SSR && absLink.value) {
-    console.log(new URL(absLink.value).hostname)
     switch (new URL(absLink.value).hostname) {
       case "gitee.com": {
         return {
