@@ -1,4 +1,4 @@
-import { defineConfig } from "vitepress"
+import { DefaultTheme, defineConfig } from "vitepress"
 import { fileURLToPath, URL } from "node:url"
 
 const base = "/"
@@ -6,60 +6,17 @@ const base = "/"
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "OHOS Dev",
-  description: "OHOS Dev Website",
+  description:
+    "OpenHarmony Developer Community, Unofficial Position Created for the Future of OpenHarmony, Peace & Love.",
   base,
   head: [["link", { rel: "icon", href: `${base}favicon.ico`, sizes: "any" }]],
   lastUpdated: true,
-  lang: "zh-CN",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/images/logo.svg",
-    outlineTitle: "本页内容",
-    lastUpdatedText: "更新时间",
-    darkModeSwitchLabel: "深色模式",
-    sidebarMenuLabel: "菜单",
-    returnToTopLabel: "回到顶部",
-    docFooter: {
-      prev: "上一篇",
-      next: "下一篇",
-    },
     outline: [2, 3],
-    nav: [
-      { text: "主页", link: "/" },
-      {
-        text: "项目",
-        items: [
-          { text: "项目概览", link: "/project/" },
-          { text: "F-OH", link: "/project/f-oh/" },
-        ],
-      },
-      {
-        text: "项目规范",
-        link: "/devguide",
-      },
-    ],
-    footer: {
-      message: "组织创建于：2023-02-27",
-    },
     editLink: {
       pattern: "https://gitee.com/ohos-dev/ohos-dev/edit/master/:path",
-      text: "在 Gitee 上编辑此页面",
-    },
-    sidebar: {
-      "/project/": [
-        {
-          text: "项目",
-          link: "/project/",
-          items: [
-            {
-              text: "F-OH",
-              link: "/project/f-oh/",
-              collapsed: true,
-              items: [{ text: "上传应用", link: "/project/f-oh/upload.html" }],
-            },
-          ],
-        },
-      ],
     },
     socialLinks: [
       {
@@ -72,29 +29,6 @@ export default defineConfig({
     ],
     search: {
       provider: "local",
-      options: {
-        translations: {
-          button: {
-            buttonText: "搜索",
-            buttonAriaLabel: "搜索",
-          },
-          modal: {
-            displayDetails: "显示详情信息",
-            resetButtonTitle: "清空内容",
-            backButtonTitle: "关闭搜索",
-            noResultsText: "未找到相关内容",
-            footer: {
-              selectText: "选择",
-              selectKeyAriaLabel: "进入",
-              navigateText: "导航",
-              navigateUpKeyAriaLabel: "向上",
-              navigateDownKeyAriaLabel: "向下",
-              closeText: "关闭",
-              closeKeyAriaLabel: "退出",
-            },
-          },
-        },
-      },
     },
     externalLinkIcon: true,
   },
@@ -105,9 +39,139 @@ export default defineConfig({
     resolve: {
       alias: {
         "@": fileURLToPath(new URL("./theme", import.meta.url)),
+        root: fileURLToPath(new URL("../", import.meta.url)),
         "vue-i18n": "vue-i18n/dist/vue-i18n.cjs.js",
       },
       extensions: [".js", ".json", ".jsx", ".mjs", ".ts", ".tsx", ".vue"],
+    },
+  },
+  locales: {
+    root: {
+      label: "English",
+      lang: "en",
+      themeConfig: {
+        nav: [
+          { text: "Home", link: "/" },
+          {
+            text: "Projects",
+            items: [
+              { text: "Overview", link: "/project/" },
+              { text: "F-OH", link: "/project/f-oh/" },
+            ],
+          },
+          {
+            text: "Project Specifications",
+            link: "/devguide",
+          },
+        ],
+        footer: {
+          message: "Organization created on: 2023-02-277",
+        },
+        editLink: <Readonly<DefaultTheme.EditLink>>{
+          text: "Edit on Gitee",
+        },
+        sidebar: {
+          "/project/": [
+            {
+              text: "Projects",
+              link: "/project/",
+              items: [
+                {
+                  text: "F-OH",
+                  link: "/project/f-oh/",
+                  collapsed: true,
+                  items: [
+                    { text: "Upload Apps", link: "/project/f-oh/upload.html" },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      },
+    },
+    "zh-CN": {
+      label: "简体中文",
+      lang: "zh-CN",
+      link: "/zh-CN/",
+      description:
+        "OpenHarmony 开发者社区，非官方阵地，为 OpenHarmony 的未来而创建，Peace & Love。",
+      themeConfig: {
+        outlineTitle: "本页内容",
+        lastUpdatedText: "更新时间",
+        darkModeSwitchLabel: "深色模式",
+        sidebarMenuLabel: "菜单",
+        returnToTopLabel: "回到顶部",
+        docFooter: {
+          prev: "上一篇",
+          next: "下一篇",
+        },
+        nav: [
+          { text: "主页", link: "/zh-CN/" },
+          {
+            text: "项目",
+            items: [
+              { text: "项目概览", link: "/zh-CN/project/" },
+              { text: "F-OH", link: "/zh-CN/project/f-oh/" },
+            ],
+          },
+          {
+            text: "项目规范",
+            link: "/zh-CN/devguide",
+          },
+        ],
+        footer: {
+          message: "组织创建于：2023-02-27",
+        },
+        editLink: {
+          pattern: "https://gitee.com/ohos-dev/ohos-dev/edit/master/:path",
+          text: "在 Gitee 上编辑此页面",
+        },
+        sidebar: {
+          "/zh-CN/project/": [
+            {
+              text: "项目",
+              link: "/zh-CN/project/",
+              items: [
+                {
+                  text: "F-OH",
+                  link: "/zh-CN/project/f-oh/",
+                  collapsed: true,
+                  items: [
+                    { text: "上传应用", link: "/zh-CN/project/f-oh/upload.html" },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        search: {
+          provider: "local",
+          options: {
+            translations: {
+              button: {
+                buttonText: "搜索",
+                buttonAriaLabel: "搜索",
+              },
+              modal: {
+                displayDetails: "显示详情信息",
+                resetButtonTitle: "清空内容",
+                backButtonTitle: "关闭搜索",
+                noResultsText: "未找到相关内容",
+                footer: {
+                  selectText: "选择",
+                  selectKeyAriaLabel: "进入",
+                  navigateText: "导航",
+                  navigateUpKeyAriaLabel: "向上",
+                  navigateDownKeyAriaLabel: "向下",
+                  closeText: "关闭",
+                  closeKeyAriaLabel: "退出",
+                },
+              },
+            },
+          },
+        },
+      },
     },
   },
 })

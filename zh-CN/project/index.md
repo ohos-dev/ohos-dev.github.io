@@ -1,11 +1,11 @@
-# Projects Overview
+# 项目概览
 
 <ProjectCards class="cards" :projects="projects" />
 
 <script setup lang="ts">
     import ProjectCards from "@/components/ProjectCards.vue"
-    import FOHLogo from "./f-oh/images/logo.svg"
-    import projects from './projects.ts'
+    import FOHLogo from "root/project/f-oh/images/logo.svg"
+    import projects from 'root/project/projects.ts'
 </script>
 
 <style lang="scss">
