@@ -6,16 +6,16 @@
 ## 移动应用类
 
 - 项目命名
-  - 建议驼峰式，每个单词首字母大写（特殊词组除外），例如：DeviceInfo
-  - 如果是fork的仓库进行二开，保持原仓名称即可，忽略命名要求
+  - 建议驼峰式，每个单词首字母大写（特殊词组除外），例如：`DeviceInfo`
+  - 如果是 fork 的仓库进行二开，保持原仓名称即可，忽略命名要求
 - 应用包名
-  - 必须以 org.ohosdev. 开头，例如：org.ohosdev.deviceinfo
-  - app.json5中的vendor，写ohosdev或自己的名字，默认创建的项目是example
+  - 必须以 `org.ohosdev.` 开头，例如：`org.ohosdev.deviceinfo`
+  - `app.json5` 中的 `vendor`，写 `ohosdev` 或自己的名字，默认创建的项目是 `example`
 - 应用图标
   - 分辨率 256 * 256 起步，形状最好是圆角方形
-- README格式（可参考：[DeviceInfo](https://gitee.com/ohos-dev/device-info)、[BrowserCE](https://gitee.com/ohos-dev/browser-ce)）
+- README 格式（可参考：[DeviceInfo](https://gitee.com/ohos-dev/device-info)、[BrowserCE](https://gitee.com/ohos-dev/browser-ce)）
     ```md
-    ## 项目名称
+    # 项目名称
     应用图标
     ## 项目介绍
     ## 修改说明（可选）
@@ -33,13 +33,13 @@
 ## 电脑软件类
 
 - 项目命名
-  - 建议驼峰式，每个单词首字母大写（特殊词组除外），例如：HapViewer
+  - 建议驼峰式，每个单词首字母大写（特殊词组除外），例如：`HapViewer`
 - README格式
   - 暂无特定规范
 
 ## 脚本文档类
 
 - 项目命名
-  - 全小写，每个单词间用“-”连接，例如：hdc-shell-scripts
+  - 全小写，每个单词间用 `-` 连接，例如：`hdc-shell-scripts`
 - README格式
   - 暂无特定规范
