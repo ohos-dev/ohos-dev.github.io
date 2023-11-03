@@ -30,9 +30,8 @@ interface DestinationConfig {
 /**
  * 目的地配置
  */
-const destinationConfig = computed<DestinationConfig | undefined>(() => {
+const destinationConfig = computed<DestinationConfig | null>(() => {
   if (!import.meta.env.SSR && absLink.value) {
-    console.log(new URL(absLink.value).hostname)
     switch (new URL(absLink.value).hostname) {
       case "gitee.com": {
         return {
@@ -58,8 +57,9 @@ const destinationConfig = computed<DestinationConfig | undefined>(() => {
       }
     }
   }
-  return undefined
+  return null
 })
+
 </script>
 
 <template>
@@ -71,7 +71,7 @@ const destinationConfig = computed<DestinationConfig | undefined>(() => {
     :alt="name">
     <article class="box">
       <div class="head">
-        <img class="icon" :src="icon" :alt="icon" />
+        <img class="icon" :src="icon" />
         <div class="headRight">
           <span class="name" v-html="name"></span>
           <span class="link" :title="absLink">{{ absLink }}</span>
