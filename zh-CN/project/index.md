@@ -4,8 +4,8 @@
 
 <script setup lang="ts">
     import ProjectCards from "@/components/ProjectCards.vue"
-    import FOHLogo from "root/project/f-oh/images/logo.svg"
-    import projects from 'root/project/projects.ts'
+    import FOHLogo from "@@/project/f-oh/images/logo.svg"
+    import projects from '@@/project/projects.ts'
 </script>
 
 <style lang="scss">

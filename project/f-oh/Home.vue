@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ProjectCards from "@/components/ProjectCards.vue"
-import data from "./i18n"
+import data from "./locales"
 import { useData } from "vitepress"
 import { computed } from "vue"
 
@@ -45,3 +45,4 @@ const derivativeProjects = computed(
   padding: 0;
 }
 </style>
+./locales

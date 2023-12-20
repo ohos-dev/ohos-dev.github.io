@@ -1,5 +1,5 @@
-import FOHLogo from "./images/logo.svg"
-import { FOHHomeData } from "root/project/f-oh/data.interfaces"
+import FOHLogo from "@@/project/f-oh/images/logo.svg"
+import { FOHHomeData } from "@@/project/f-oh/data.interfaces"
 
 export default <FOHHomeData>{
   projects: [

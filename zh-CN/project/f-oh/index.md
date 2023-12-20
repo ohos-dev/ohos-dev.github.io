@@ -39,7 +39,7 @@ features:
 ---
 
 <script setup lang="ts">
-  import Home from 'root/project/f-oh/Home.vue'
+  import Home from '@@/project/f-oh/Home.vue'
 </script>
 
 <Home />
