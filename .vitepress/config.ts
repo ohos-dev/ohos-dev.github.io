@@ -64,10 +64,6 @@ export default defineConfig({
           { text: 'F-OH', link: '/project/f-oh/' },
         ],
       },
-      {
-        text: '项目规范',
-        link: '/devguide',
-      },
     ],
     footer: {
       message: '组织创建于：2023-02-27',
