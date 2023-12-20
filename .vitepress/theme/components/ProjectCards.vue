@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed } from "vue"
-import ProjectCard, { Project } from "@/components/ProjectCard.vue"
+import { computed } from 'vue'
+import ProjectCard, { Project } from '@/components/ProjectCard.vue'
 const props = defineProps<{
   projects: Project[]
 }>()
@@ -10,24 +10,20 @@ const grid = computed(() => {
   if (!length) {
     return
   } else if (length === 2) {
-    return "grid-2"
+    return 'grid-2'
   } else if (length === 3) {
-    return "grid-3"
+    return 'grid-3'
   } else if (length % 3 === 0) {
-    return "grid-6"
+    return 'grid-6'
   } else if (length > 3) {
-    return "grid-4"
+    return 'grid-4'
   }
 })
 </script>
 <template>
   <div class="ProjectCards">
     <div class="items">
-      <div
-        v-for="project in projects"
-        :key="project.name"
-        class="item"
-        :class="[grid]">
+      <div v-for="project in projects" :key="project.name" class="item" :class="[grid]">
         <ProjectCard v-bind="project" />
       </div>
     </div>

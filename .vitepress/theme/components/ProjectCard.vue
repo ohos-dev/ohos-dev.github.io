@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import VPLink from "vitepress/dist/client/theme-default/components/VPLink.vue"
-import FOHIcon from "@/assets/images/foh.svg"
-import GieeIcon from "@/assets/images/gitee.svg"
-import { computed } from "vue"
+import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
+import FOHIcon from '@/assets/images/foh.svg'
+import GieeIcon from '@/assets/images/gitee.svg'
+import { computed } from 'vue'
 export interface Project {
   name: string
   link: string
@@ -32,32 +32,26 @@ interface DestinationConfig {
 const destinationConfig = computed<DestinationConfig | null>(() => {
   if (!import.meta.env.SSR && absLink.value) {
     switch (new URL(absLink.value).hostname) {
-      case "gitee.com": {
+      case 'gitee.com': {
         return {
           icon: GieeIcon,
-          name: "Gitee",
+          name: 'Gitee',
         }
       }
-      case "170.178.208.105": {
+      case '170.178.208.105': {
         return {
           icon: FOHIcon,
-          name: "OHOS Dev",
+          name: 'OHOS Dev',
         }
       }
     }
   }
   return null
 })
-
 </script>
 
 <template>
-  <VPLink
-    class="ProjectCard"
-    :href="link"
-    :no-icon="true"
-    :tag="link ? 'a' : 'div'"
-    :alt="name">
+  <VPLink class="ProjectCard" :href="link" :no-icon="true" :tag="link ? 'a' : 'div'" :alt="name">
     <article class="box">
       <div class="head">
         <img class="icon" :src="icon" />
@@ -168,8 +162,8 @@ a.ProjectCard:hover {
       height: 11px;
       transition: transform 0.25s;
       background-color: currentColor;
-      -webkit-mask-image: url("@/assets/images/right.svg");
-      mask-image: url("@/assets/images/right.svg");
+      -webkit-mask-image: url('@/assets/images/right.svg');
+      mask-image: url('@/assets/images/right.svg');
     }
   }
   &:hover {
