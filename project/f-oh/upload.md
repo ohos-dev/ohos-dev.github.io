@@ -1,19 +1,19 @@
-# 上传应用
+# Upload Application
 
 ::: tip
-F-OH 仅收录自由开源软件，“自由软件必定开源，开源软件未必自由，有些开源许可证对用户过于苛刻，它们就没有被列为自由软件”，引用自由GNU，FSF创始人——Richard Stallman编写的回答：[为什么开源错失了自由软件的重点？](https://www.gnu.org/philosophy/open-source-misses-the-point.zh-cn.html)
+F-OH only includes free and open-source software. "Free software must be open-source, but open-source software may not necessarily be free. Some open-source licenses are too strict for users, so they are not classified as free software." Richard Stallman, the founder of the Free Software Foundation (FSF), wrote in an answer: ["Why open source misses the point of free software?"](https://www.gnu.org/philosophy/open-source-misses-the-point.zh-cn.html).
 
-开发初期，为了最大程度减小后端开发和服务器的投入成本，暂时用自建的Git服务来协作管理应用的元数据
+In the early stages of development, in order to minimize the investment costs of backend development and servers, a self-built Git service was temporarily used to collaboratively manage the application's metadata.
 :::
 
 - [F-OH Data](http://170.178.208.105:3000/ohos-dev/F-OH-Data)
-- 这里存放了 F-OH 所有应用程序的元数据，开发者在这里PR提交自己的应用
-- 打开这个仓库链接，按照里面的指引去提交自己的应用（很简单的）
+- This is where the metadata for all F-OH applications are stored, and developers submit their applications for PR here
+- Open this repository link and follow the instructions to submit your application (very simple)
 
-## 注意事项
+## Note
 
-为避免一些潜在的风险，以下应用将不会被收录
+To avoid some potential risks, the following apps will not be included
 
-- 未经官方授权的三方客户端应用
-- 使用不明三方数据接口或资源的应用
-- 包含不符合法律法规资源或字样的应用
+- Unauthorized third-party client applications
+- Applications that use unknown third-party data interfaces or resources
+- Applications that contain resources or characters that do not comply with laws and regulations
