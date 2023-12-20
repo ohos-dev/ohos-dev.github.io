@@ -41,7 +41,10 @@ export default defineConfig({
   lang: 'zh-CN',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/images/logo.svg',
+    logo: {
+      light: '/images/logo_light_oh.svg',
+      dark: '/images/logo_dark_oh.svg',
+    },
     outlineTitle: '本页内容',
     lastUpdatedText: '更新时间',
     darkModeSwitchLabel: '深色模式',

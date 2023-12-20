@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 428 428">
+  <defs>
+    <style>
+      .c {
+        fill: none;
+        stroke: url(#b);
+        stroke-miterlimit: 10;
+        stroke-width: 40px;
+      }
+    </style>
+    <linearGradient id="b" data-name="未命名的渐变" x1="0" y1="214" x2="428" y2="214" gradientTransform="translate(0 428) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00a6f9"/>
+      <stop offset="1" stop-color="#81bd0a"/>
+    </linearGradient>
+  </defs>
+  <circle class="c" cx="214" cy="214" r="194"/>
+  <path d="M239.45,278.39c-2.37-2.29-3.55-5.04-3.55-8.25v-99.53h-46.21c0,19.8-.97,37.58-2.92,53.32-1.95,15.74-5.04,31.48-9.27,47.23-2.03,6.77-6.09,10.16-12.19,10.16-3.55,0-6.43-1.02-8.63-3.05-2.2-2.03-3.3-4.57-3.3-7.62,0-1.35,.25-2.62,.76-3.81l1.27-4.32c4.23-13.71,7.19-27.63,8.89-41.77,1.69-14.13,2.54-30.85,2.54-50.15h-16.76c-6.77,0-10.16-3.38-10.16-10.16s3.38-10.16,10.16-10.16h121.62c6.77,0,10.16,3.39,10.16,10.16s-3.39,10.16-10.16,10.16h-12.19v99.53c0,3.22-1.14,5.97-3.43,8.25s-5.04,3.43-8.25,3.43-6.01-1.14-8.38-3.43h0Z"/>
+</svg>

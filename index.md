@@ -8,7 +8,8 @@ hero:
   text: OpenHarmony 开发者社区
   tagline: 非官方阵地，为 OpenHarmony 的未来而创建，Peace & Love
   image:
-    src: /images/logo.svg
+    light: /images/logo_light_oh.svg
+    dark: /images/logo_dark_oh.svg
     alt: OHOS Dev
   actions:
     - theme: brand
