@@ -1,5 +1,5 @@
 import { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
-import { editLinkPattern, organizationCreatedDate } from '../constants'
+import { editLinkPattern, organizationCreatedDate } from '../theme/constants'
 import { ThemeConfig } from '../theme/ts/config.interfaces'
 
 export const link = '/zh-CN/'

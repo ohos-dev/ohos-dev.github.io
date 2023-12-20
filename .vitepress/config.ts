@@ -1,6 +1,6 @@
 import { UserConfig, defineConfigWithTheme } from 'vitepress'
 import { fileURLToPath, URL } from 'node:url'
-import { base } from './constants'
+import { base } from './theme/constants'
 import { config as englishConfig } from './locales/en'
 import { config as zhCNConfig, link as zhCNLink } from './locales/zhCN'
 import { ThemeConfig } from './theme/ts/config.interfaces'

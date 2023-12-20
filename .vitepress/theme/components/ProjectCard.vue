@@ -5,6 +5,7 @@ import GieeIcon from '@/assets/images/gitee.svg'
 import { computed } from 'vue'
 import { useData } from 'vitepress'
 import { ThemeConfig } from '@/ts/config.interfaces'
+import { HOST_SERVICE } from '@/constants'
 export interface Project {
   name: string
   link: string
@@ -42,7 +43,7 @@ const destinationConfig = computed<DestinationConfig | null>(() => {
           name: 'Gitee',
         }
       }
-      case '170.178.208.105': {
+      case HOST_SERVICE: {
         return {
           icon: FOHIcon,
           name: 'OHOS Dev',

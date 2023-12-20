@@ -14,16 +14,16 @@ hero:
   actions:
     - theme: brand
       text: Donload
-      link: https://gitee.com/ohos-dev/foh/releases
+      link: https://gitee.com/westinyang/f-oh/releases
     - theme: alt
       text: Upload Apps
       link: ./upload.html
     - theme: alt
       text: View on Gitee
-      link: https://gitee.com/ohos-dev/f-oh
+      link: https://gitee.com/westinyang/f-oh
     - theme: alt
       text: View on GitHub
-      link: https://github.com/ohos-dev/f-oh
+      link: https://github.com/westinyang/f-oh
 
 features:
   - icon: 🚄

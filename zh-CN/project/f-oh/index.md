@@ -15,16 +15,16 @@ hero:
   actions:
     - theme: brand
       text: 下载安装
-      link: https://gitee.com/ohos-dev/foh/releases
+      link: https://gitee.com/westinyang/f-oh/releases
     - theme: alt
       text: 上传应用
       link: ./upload.html
     - theme: alt
       text: 在 Gitee 上查看
-      link: https://gitee.com/ohos-dev/f-oh
+      link: https://gitee.com/westinyang/f-oh
     - theme: alt
       text: 在 GitHub 上查看
-      link: https://github.com/ohos-dev/f-oh
+      link: https://github.com/westinyang/f-oh
 
 features:
   - icon: 🚄
