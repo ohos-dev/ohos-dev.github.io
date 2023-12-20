@@ -3,6 +3,8 @@ import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
 import FOHIcon from '@/assets/images/foh.svg'
 import GieeIcon from '@/assets/images/gitee.svg'
 import { computed } from 'vue'
+import { useData } from 'vitepress'
+import { ThemeConfig } from '@/ts/config.interfaces'
 export interface Project {
   name: string
   link: string
@@ -12,6 +14,8 @@ export interface Project {
 }
 
 const props = defineProps<Project>()
+
+const { theme } = useData<ThemeConfig>()
 
 /**
  * 绝对路径的链接，用于向用户展示
@@ -67,7 +71,7 @@ const destinationConfig = computed<DestinationConfig | null>(() => {
           <img class="icon" :src="destinationConfig.icon" />
           <span class="name">{{ destinationConfig.name }}</span>
         </template>
-        <span v-else class="name">查看</span>
+        <span v-else class="name">{{ theme.viewLabel }}</span>
         <span class="openIcon" />
       </div>
     </article>

@@ -29,9 +29,6 @@ features:
   - icon: 🏆
     title: Ecology and Impact
     details: Expanding the ecosystem and reach of OHOS systems and applications
-  - icon: 🌍
-    title: 国产化
-    details: OHOS 在未来的国产化技术覆盖领域中全面绽放
 ---
 
 <!-- Since the home layout doesn't have a Markdown style, we have to add one manually. -->

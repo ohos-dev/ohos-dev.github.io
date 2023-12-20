@@ -1,11 +1,12 @@
 import { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
 import { editLinkPattern, organizationCreatedDate } from '../constants'
-
+import { ThemeConfig } from '../theme/ts/config.interfaces'
 export const link = '/'
 
-export const config: LocaleSpecificConfig<DefaultTheme.Config> = {
+export const config: LocaleSpecificConfig<ThemeConfig> = {
   lang: 'en',
   themeConfig: {
+    viewLabel: 'View',
     nav: [
       { text: 'Home', link },
       {

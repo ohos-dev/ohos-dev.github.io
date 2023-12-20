@@ -1,11 +1,12 @@
-import { DefaultTheme, defineConfig } from 'vitepress'
+import { UserConfig, defineConfigWithTheme } from 'vitepress'
 import { fileURLToPath, URL } from 'node:url'
-import { base, editLinkPattern, organizationCreatedDate } from './constants'
+import { base } from './constants'
 import { config as englishConfig } from './locales/en'
 import { config as zhCNConfig, link as zhCNLink } from './locales/zhCN'
+import { ThemeConfig } from './theme/ts/config.interfaces'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default defineConfigWithTheme<ThemeConfig>({
   title: 'OHOS Dev',
   description:
     'OpenHarmony Developer Community, Unofficial Position Created for the Future of OpenHarmony, Peace & Love.',
@@ -47,7 +48,7 @@ export default defineConfig({
       dark: '/images/logo_dark_oh.svg',
     },
     outline: [2, 3],
-
+    viewLabel: 'View',
     editLink: {
       pattern: 'https://gitee.com/ohos-dev/ohos-dev/edit/master/:path',
     },

@@ -27,21 +27,19 @@ hero:
 
 features:
   - icon: 🚄
-    title: Co-Building
-    details: More Developers Participate in OHOS Open Source Application Co-Building
+    title: Open source
+    details: Open source application
   - icon: 🏆
-    title: Ecology and Impact
-    details: Expanding the ecosystem and reach of OHOS systems and applications
-  - icon: 🌍
-    title: 国产化
-    details: OHOS 在未来的国产化技术覆盖领域中全面绽放
+    title: Free
+    details: Free application
 ---
 
 <script setup lang="ts">
   import Home from '@@/project/f-oh/Home.vue'
+  import data from './data'
 </script>
 
-<Home />
+<Home :data="data" />
 
 <!-- 由于 home 布局没有 Markdown 的样式，所以要手动添加一个样式 -->
 <div class="vp-doc external-link-icon-enabled container">
@@ -55,9 +53,9 @@ features:
 
 ## License
 
-- 本项目是以 GPL v3 许可开源，你可以根据自由软件基金会发布的 [GNU 通用公共许可证](https://www.gnu.org/licenses/gpl.html) 的条款重新分配和/或对其进行修改
-- 应用图标出处：<https://www.flaticon.com/free-icon/ellipse_4674229>
-- 底部图标出处：<https://gitee.com/openharmony/applications_app_samples>
-- 其他图标出处：<https://www.flaticon.com/packs/basic-user-interface-147>
+- This project is open source under the GPL v3 license, which you may redistribute and/or modify under the terms of the [GNU General Public License](https://www.gnu.org/licenses/gpl.html) issued by the Free Software Foundation.
+- Application icons provenance:<https://www.flaticon.com/free-icon/ellipse_4674229>
+- Bottom icons provenance:<https://gitee.com/openharmony/applications_app_samples>
+- Other icons provenance:<https://www.flaticon.com/packs/basic-user-interface-147>
 
 </div>

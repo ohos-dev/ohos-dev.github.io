@@ -5,6 +5,6 @@ export default <Project[]>[
     name: 'F-OH',
     link: './f-oh/',
     icon: FOHLogo,
-    details: 'F-OH for OpenHarmony',
+    details: 'F-OH OpenHarmony 移动端',
   },
 ]

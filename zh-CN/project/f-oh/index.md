@@ -28,21 +28,19 @@ hero:
 
 features:
   - icon: 🚄
-    title: 共建
-    details: 更多的开发者参与 OHOS 开源应用软件的共建
+    title: 开源
+    details: 开源软件
   - icon: 🏆
-    title: 生态和影响力
-    details: 扩大 OHOS 系统和应用软件的生态和影响力
-  - icon: 🌍
-    title: 国产化
-    details: OHOS 在未来的国产化技术覆盖领域中全面绽放
+    title: 自由
+    details: 自由软件
 ---
 
 <script setup lang="ts">
   import Home from '@@/project/f-oh/Home.vue'
+  import data from './data'
 </script>
 
-<Home />
+<Home :data="data" />
 
 <!-- 由于 home 布局没有 Markdown 的样式，所以要手动添加一个样式 -->
 <div class="vp-doc external-link-icon-enabled container">

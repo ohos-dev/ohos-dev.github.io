@@ -1,8 +1,9 @@
 import { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
 import { editLinkPattern, organizationCreatedDate } from '../constants'
-export const link = '/zh-CN/'
+import { ThemeConfig } from '../theme/ts/config.interfaces'
 
-export const config: LocaleSpecificConfig<DefaultTheme.Config> = {
+export const link = '/zh-CN/'
+export const config: LocaleSpecificConfig<ThemeConfig> = {
   lang: 'zh-CN',
   description: 'OpenHarmony 开发者社区，非官方阵地，为 OpenHarmony 的未来而创建，Peace & Love。',
   themeConfig: {
@@ -11,6 +12,7 @@ export const config: LocaleSpecificConfig<DefaultTheme.Config> = {
     darkModeSwitchLabel: '深色模式',
     sidebarMenuLabel: '菜单',
     returnToTopLabel: '回到顶部',
+    viewLabel: '查看',
     docFooter: {
       prev: '上一篇',
       next: '下一篇',

@@ -13,21 +13,20 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "types": [
-      "vite/client"
-    ],
+    "types": ["vite/client"],
     "paths": {
       "@/*": [".vitepress/theme/*"],
       "@@/*": ["*"]
-    },
+    }
   },
   "include": [
     ".vitepress/theme/**/*.ts",
+    ".vitepress/theme/**/*.interfaces.ts",
     ".vitepress/theme/**/*.d.ts",
     ".vitepress/theme/**/*.tsx",
     ".vitepress/theme/**/*.vue",
     "**/*.vue",
     "**/*.ts",
-    "vite.config.ts",
+    "vite.config.ts"
   ]
 }

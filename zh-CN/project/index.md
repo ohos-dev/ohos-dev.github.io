@@ -5,7 +5,7 @@
 <script setup lang="ts">
     import ProjectCards from "@/components/ProjectCards.vue"
     import FOHLogo from "@@/project/f-oh/images/logo.svg"
-    import projects from '@@/project/projects.ts'
+    import projects from './projects.ts'
 </script>
 
 <style lang="scss">

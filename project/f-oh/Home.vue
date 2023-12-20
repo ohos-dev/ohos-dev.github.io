@@ -1,27 +1,32 @@
 <script setup lang="ts">
-import ProjectCards from "@/components/ProjectCards.vue"
-import data from "./locales"
-import { useData } from "vitepress"
-import { computed } from "vue"
+import ProjectCards from '@/components/ProjectCards.vue'
+// import data from "./locales"
+import { useData } from 'vitepress'
+import { computed } from 'vue'
+import { FOHHomeData } from './data.interfaces'
 
-const { lang } = useData()
+// const { lang } = useData()
 
-const projects = computed(() => data[lang.value].projects ?? data.en.projects)
-const derivativeProjects = computed(
-  () => data[lang.value].derivativeProjects ?? data.en.derivativeProjects
-)
+// const projects = computed(() => data[lang.value].projects ?? data.en.projects)
+// const derivativeProjects = computed(
+//   () => data[lang.value].derivativeProjects ?? data.en.derivativeProjects
+// )
+
+defineProps<{
+  data: FOHHomeData
+}>()
 </script>
 
 <template>
   <div class="container vp-doc">
     <h2>
-      {{ data[lang].seriesProjectsText ?? data.en.seriesProjectsText }}
+      {{ data.seriesProjectsText }}
     </h2>
-    <ProjectCards :projects="projects" />
+    <ProjectCards :projects="data.projects" />
     <h2>
-      {{ data[lang].derivativeProjectsText ?? data.en.derivativeProjectsText }}
+      {{ data.derivativeProjectsText }}
     </h2>
-    <ProjectCards :projects="derivativeProjects" />
+    <ProjectCards :projects="data.derivativeProjects" />
   </div>
 </template>
 
@@ -45,4 +50,3 @@ const derivativeProjects = computed(
   padding: 0;
 }
 </style>
-./locales
