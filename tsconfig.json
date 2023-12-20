@@ -17,7 +17,8 @@
       "vite/client"
     ],
     "paths": {
-      "@/*": [".vitepress/theme/*"]
+      "@/*": [".vitepress/theme/*"],
+      "root/*": ["*"]
     },
   },
   "include": [

@@ -1,12 +1,13 @@
-import { defineConfig } from 'vitepress'
+import { DefaultTheme, defineConfig } from 'vitepress'
 import { fileURLToPath, URL } from 'node:url'
 
 const base = '/'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'OHOS Dev',
-  description: 'OHOS Dev Website',
+  title: "OHOS Dev",
+  description:
+    "OpenHarmony Developer Community, Unofficial Position Created for the Future of OpenHarmony, Peace & Love.",
   base,
   head: [
     ['link', { rel: 'icon', href: `${base}favicon.ico`, sizes: 'any' }],
@@ -38,7 +39,6 @@ export default defineConfig({
     ],
   ],
   lastUpdated: true,
-  lang: 'zh-CN',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: {

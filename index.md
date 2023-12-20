@@ -5,15 +5,15 @@ titleTemplate: false
 
 hero:
   name: OHOS Dev
-  text: OpenHarmony 开发者社区
-  tagline: 非官方阵地，为 OpenHarmony 的未来而创建，Peace & Love
+  text: OpenHarmony Developer Community
+  tagline: Unofficial Position Created for the Future of OpenHarmony, Peace & Love
   image:
     light: /images/logo_light_oh.svg
     dark: /images/logo_dark_oh.svg
     alt: OHOS Dev
   actions:
     - theme: brand
-      text: 项目概览
+      text: Projects Overview
       link: /project/
     - theme: alt
       text: Gitee
@@ -24,22 +24,22 @@ hero:
 
 features:
   - icon: 🚄
-    title: 共建
-    details: 更多的开发者参与 OHOS 开源应用软件的共建
+    title: Co-Building
+    details: More Developers Participate in OHOS Open Source Application Co-Building
   - icon: 🏆
-    title: 生态和影响力
-    details: 扩大 OHOS 系统和应用软件的生态和影响力
+    title: Ecology and Impact
+    details: Expanding the ecosystem and reach of OHOS systems and applications
   - icon: 🌍
     title: 国产化
     details: OHOS 在未来的国产化技术覆盖领域中全面绽放
 ---
 
-<!-- 由于 home 布局没有 Markdown 的样式，所以要手动添加一个样式 -->
+<!-- Since the home layout doesn't have a Markdown style, we have to add one manually. -->
 <div class="vp-doc external-link-icon-enabled container">
 
-## 起源
+## Originate
 
-> 组织创建于：2023-02-27
+> Organization created on: 2023-02-27
 
 展望 2023，前有B站大佬[@Diemit](https://space.bilibili.com/1570309)、[@AlgoIdeas](https://space.bilibili.com/36549646) 和 [@Wathinst](https://space.bilibili.com/384743347) 移植 OpenHarmony 到小米6、一加6T、PocoF1 等旧手机上（详情参见此处：[awesome-ohos-org](https://gitee.com/ohos-dev/awesome-ohos-org)），后有 [OpenHarmony 上 PC](https://mp.weixin.qq.com/s/486o6HZyvi0jqyivPnr6lQ) 的重磅消息，也许 OpenHarmony 的发展注定会成为国产化技术中的重要一环。
 
@@ -66,11 +66,16 @@ OpenHarmony 正在茁壮成长，虽然从 API 9 开始拥有完备的应用开�
 - 扩大 OHOS 系统和应用软件的生态和影响力
 - OHOS 在未来的国产化技术覆盖领域中全面绽放
 
-## 联系
+## Contact
 
 - 码云组织：<https://gitee.com/ohos-dev>
-- 加入组织：点击 [组织首页](https://gitee.com/ohos-dev) 右上角的 “申请加入组织” 链接
+- 加入组织：点击 [组织首页](https://gitee.com/ohos-dev) 右上角的“申请加入组织”按钮
 - 哔哩哔哩：<https://space.bilibili.com/74433635>
-- 企鹅群组：`752399947`
+- 企鹅群组：752399947
+
+## 导航
+
+- [项目规范](https://gitee.com/ohos-dev/docs/blob/master/ProjectSpec.md) `在组织内创建开源项目必看文档`
+- [项目统计](https://gitee.com/ohos-dev/docs/blob/master/ProjectStatistics.md) `组织内开源项目贡献统计`
 
 </div>
