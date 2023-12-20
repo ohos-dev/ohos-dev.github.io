@@ -1,6 +1,7 @@
 
 import FOHLogo from "@@/project/f-oh/images/logo.svg"
 import { FOHHomeData } from "@@/project/f-oh/data.interfaces"
+import { HOST_SERVICE } from "@/constants"
 
 export default <FOHHomeData>{
   projects: [
@@ -12,7 +13,7 @@ export default <FOHHomeData>{
     },
     {
       name: "F-OH Data",
-      link: "http://170.178.208.105:3000/ohos-dev/F-OH-Data",
+      link: `http://${HOST_SERVICE}:3000/ohos-dev/F-OH-Data`,
       icon: FOHLogo,
       details: "F-OH 所有应用程序的元数据，开发者在这里PR提交自己的应用",
     },
