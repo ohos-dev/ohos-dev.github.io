@@ -22,7 +22,7 @@ yarn build
 
 ## 许可
 
-- 本项目：[Apache 2.0](./LICENSE)
+- 本项目：[Apache 2.0](./LICENSE.md)
   ```txt
   Copyright 2023 OHOS Dev
 
