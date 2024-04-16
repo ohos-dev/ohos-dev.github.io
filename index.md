@@ -68,6 +68,7 @@ OpenHarmony 正在茁壮成长，虽然从 API 9 开始拥有完备的应用开�
 - 码云组织：<https://gitee.com/ohos-dev>
 - 加入组织：点击 [组织首页](https://gitee.com/ohos-dev) 右上角的 “申请加入组织” 链接
 - 哔哩哔哩：<https://space.bilibili.com/74433635>
-- 企鹅群组：`752399947`
+- 企鹅群组：528608689
+- 微信群组：westin1024（备注：OH群）
 
 </div>
