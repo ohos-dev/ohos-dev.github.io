@@ -34,41 +34,42 @@ features:
 <!-- Since the home layout doesn't have a Markdown style, we have to add one manually. -->
 <div class="vp-doc external-link-icon-enabled container">
 
-## 起源
 
-> 组织创建于：2023-02-27
+## Origin
 
-展望 2023，前有B站大佬[@Diemit](https://space.bilibili.com/1570309)、[@AlgoIdeas](https://space.bilibili.com/36549646) 和 [@Wathinst](https://space.bilibili.com/384743347) 移植 OpenHarmony 到小米6、一加6T、PocoF1 等旧手机上（详情参见此处：[awesome-ohos-org](https://gitee.com/ohos-dev/awesome-ohos-org)），后有 [OpenHarmony 上 PC](https://mp.weixin.qq.com/s/486o6HZyvi0jqyivPnr6lQ) 的重磅消息，也许 OpenHarmony 的发展注定会成为国产化技术中的重要一环。
+> Organization founded on: 2023-02-27
 
-OpenHarmony 正在茁壮成长，虽然从 API 9 开始拥有完备的应用开发体系，但是开源应用软件却少之又少，我认为其中一个主要原因在于目前官方支持和三方移植适配的标准系统开发板太少且价格高昂，如果没有廉价的开发板或其他代替方案（如旧手机移植），没有开发者参与开源软件的共建，那么 OpenHarmony 的整个生态依旧残缺不全...
+Looking ahead to 2023, there are big names in Bilibili [@Diemit](https://space.bilibili.com/1570309), [@AlgoIdeas](https://space.bilibili.com/36549646) and [@Wathinst](https://space.bilibili.com/384743347) who have ported OpenHarmony to old phones such as Xiaomi 6, OnePlus 6T, PocoF1. For details, please refer to here: [awesome-ohos-org](https://gitee.com/ohos-dev/awesome-ohos-org). After that, there is a big news about [OpenHarmony on PC](https://mp.weixin.qq.com/s/486o6HZyvi0jqyivPnr6lQ). Maybe the development of OpenHarmony is destined to become an important part of localization technology.
 
-随着时间的推移，2023 年 HDC 大会的召开，HarmonyOS Next 预览版的发布，似乎更明确了下一步的方向，相信在不久的将来，我们能看到一个焕然一新的开源鸿蒙生态，OpenHarmony 未来已来！
+OpenHarmony is growing rapidly. Although it has a complete application development system since API 9, there are few open source application software. I think one of the main reasons is that there are too few and expensive standard system development boards for official support and third-party porting and adaptation. Without cheap development boards or other alternative solutions such as porting from old phones, and without the participation of developers in the co-construction of open source software, the entire ecosystem of OpenHarmony will remain incomplete
 
-## 发展
+With the passage of time, the 2023 HDC conference and the release of the preview version of HarmonyOS Next seem to have made the next step clearer. I believe that in the near future, we will see a brand-new OpenHarmony ecosystem, and the future of OpenHarmony is coming!
+
+## Development
 
 ### 2023-02-27
 
-- 组织成立，名称为“OHOS Dev”
+- The organization was established and named "OHOS Dev".
 
 ### 2023-11-25
 
-- 组织正式更名为“开鸿派”
-- 所有仓库转移至原作者账号下，并尝试建立一个新的秩序，开源项目列表参见此处：[awesome-ohos-project](https://gitee.com/ohos-dev/awesome-ohos-project)
-- 启用全新设计的 LOGO（开鸿的配色、**[F-OH](https://gitee.com/westinyang/f-oh)** 的圆圈、再加上一个派的谐音 π，也寓意着无限的可能~）
-- 相关视频：[正式更名开鸿派，OpenHarmony开源组织OHOSDev的成长之路](https://www.bilibili.com/video/BV1Ma4y1f7MD)
+- The organization officially changed its name to "开鸿派".
+- All repositories were transferred to the original author's account, and attempts were made to establish a new order. For a list of open source projects, please refer to here: [awesome-ohos-project](https://gitee.com/ohos-dev/awesome-ohos-project)
+- A newly designed LOGO was adopted (the color scheme of OpenHarmony, the circle of **[F-OH](https://gitee.com/westinyang/f-oh)**, and the homonym "π" for pie, also symbolizing infinite possibilities~)
+- Related video: [Official renaming to 开鸿派, the growth journey of the OpenHarmony open source organization OHOSDev](https://www.bilibili.com/video/BV1Ma4y1f7MD)
 
-## 愿景
+## Vision
 
-- 更多的开发者参与 OHOS 开源应用软件的共建
-- 扩大 OHOS 系统和应用软件的生态和影响力
-- OHOS 在未来的国产化技术覆盖领域中全面绽放
+- Encourage more developers to participate in the co-construction of OHOS open source application software
+- Expand the ecosystem and influence of OHOS systems and application software
+- See OHOS fully bloom in future localization technology coverage areas
 
-## 联系
+## Contact
 
-- 码云组织：<https://gitee.com/ohos-dev>
-- 加入组织：点击 [组织首页](https://gitee.com/ohos-dev) 右上角的 “申请加入组织” 链接
-- 哔哩哔哩：<https://space.bilibili.com/74433635>
-- 企鹅群组：528608689
-- 微信群组：westin1024（备注：OH群）
+- Gitee Organization: <https://gitee.com/ohos-dev>
+- Join the Organization: Click the "Apply to Join Organization" link in the top right corner of the [Organization Homepage](https://gitee.com/ohos-dev)
+- Bilibili: <https://space.bilibili.com/74433635>
+- QQ Group: 528608689
+- WeChat Group: westin1024 (Note: OH Group)
 
 </div>

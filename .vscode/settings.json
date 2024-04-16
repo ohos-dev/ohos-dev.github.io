@@ -2,5 +2,12 @@
     "markdownlint.config": {
         "MD033": false,
         "MD031": false
-    }
+    },
+    "cSpell.words": [
+        "Bilibili",
+        "Diemit",
+        "ohos",
+        "Wathinst",
+        "westin"
+    ]
 }
