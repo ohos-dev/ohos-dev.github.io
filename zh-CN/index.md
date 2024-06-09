@@ -8,8 +8,8 @@ hero:
   text: OpenHarmony 开发者社区
   tagline: 非官方阵地，为 OpenHarmony 的未来而创建，Peace & Love
   image:
-    light: /images/logo_light_oh.svg
-    dark: /images/logo_dark_oh.svg
+    light: /images/ohosdev_logo_light.svg
+    dark: /images/ohosdev_logo_dark.svg
     alt: OHOS Dev
   actions:
     - theme: brand
@@ -33,9 +33,6 @@ features:
     title: 国产化
     details: OHOS 在未来的国产化技术覆盖领域中全面绽放
 ---
-
-<!-- 由于 home 布局没有 Markdown 的样式，所以要手动添加一个样式 -->
-<div class="vp-doc external-link-icon-enabled">
 
 ## 起源
 
@@ -72,5 +69,3 @@ OpenHarmony 正在茁壮成长，虽然从 API 9 开始拥有完备的应用开�
 - 哔哩哔哩：<https://space.bilibili.com/74433635>
 - 企鹅群组：528608689
 - 微信群组：westin1024（备注：OH群）
-
-</div>

@@ -9,7 +9,7 @@ hero:
   text: Application Store for FOSS on the OpenHarmony Platform
   image:
     # For the time being, we can only use resources in the public directory
-    src: /images/logo.svg
+    src: /images/logo/foh.svg
     alt: F-OH
   actions:
     - theme: brand
@@ -41,9 +41,6 @@ features:
 
 <Home :data="data" />
 
-<!-- 由于 home 布局没有 Markdown 的样式，所以要手动添加一个样式 -->
-<div class="vp-doc external-link-icon-enabled">
-
 ## Video
 
 - [F-OH：OpenHarmony 自由开源软件的应用市场终于诞生啦~ 空前绝后~](https://www.bilibili.com/video/BV1dM411N7CG)
@@ -57,5 +54,3 @@ features:
 - Application icons provenance:<https://www.flaticon.com/free-icon/ellipse_4674229>
 - Bottom icons provenance:<https://gitee.com/openharmony/applications_app_samples>
 - Other icons provenance:<https://www.flaticon.com/packs/basic-user-interface-147>
-
-</div>

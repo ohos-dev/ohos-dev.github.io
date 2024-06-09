@@ -8,8 +8,8 @@ hero:
   text: OpenHarmony Developer Community
   tagline: Unofficial Position Created for the Future of OpenHarmony, Peace & Love
   image:
-    light: /images/logo_light_oh.svg
-    dark: /images/logo_dark_oh.svg
+    light: /images/ohosdev_logo_light.svg
+    dark: /images/ohosdev_logo_dark.svg
     alt: OHOS Dev
   actions:
     - theme: brand
@@ -30,9 +30,6 @@ features:
     title: Ecology and Impact
     details: Expanding the ecosystem and reach of OHOS systems and applications
 ---
-
-<!-- Since the home layout doesn't have a Markdown style, we have to add one manually. -->
-<div class="vp-doc external-link-icon-enabled">
 
 ## Origin
 
@@ -69,5 +66,3 @@ With the passage of time, the 2023 HDC conference and the release of the preview
 - Bilibili: <https://space.bilibili.com/74433635>
 - QQ Group: 528608689
 - WeChat Group: westin1024 (Note: OH Group)
-
-</div>

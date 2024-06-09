@@ -10,7 +10,7 @@ hero:
   # tagline: OpenHarmony 平台上 FOSS（Free and Open Source Software，自由开源软件）的应用中心，并提供下载安装支持
   image:
     # 暂时只能使用public目录内的资源
-    src: /images/logo.svg
+    src: /images/logo/foh.svg
     alt: F-OH
   actions:
     - theme: brand
@@ -42,9 +42,6 @@ features:
 
 <Home :data="data" />
 
-<!-- 由于 home 布局没有 Markdown 的样式，所以要手动添加一个样式 -->
-<div class="vp-doc external-link-icon-enabled">
-
 ## 视频演示
 
 - [F-OH：OpenHarmony 自由开源软件的应用市场终于诞生啦~ 空前绝后~](https://www.bilibili.com/video/BV1dM411N7CG)
@@ -58,5 +55,3 @@ features:
 - 应用图标出处：<https://www.flaticon.com/free-icon/ellipse_4674229>
 - 底部图标出处：<https://gitee.com/openharmony/applications_app_samples>
 - 其他图标出处：<https://www.flaticon.com/packs/basic-user-interface-147>
-
-</div>
