@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
 import FOHIcon from '@/assets/images/foh.svg'
-import GieeIcon from '@/assets/images/gitee.svg'
+import GiteeIcon from '@/assets/images/gitee.svg'
 import { computed } from 'vue'
-import { useData } from 'vitepress'
+import { useData, useRoute, useRouter } from 'vitepress'
 import { ThemeConfig } from '@/ts/config.interfaces'
 import { HOST_SERVICE } from '@/constants'
 export interface Project {
@@ -17,15 +17,17 @@ export interface Project {
 const props = defineProps<Project>()
 
 const { theme } = useData<ThemeConfig>()
+const route = useRoute()
+const urlBase = import.meta.env.SSR ? 'http://localhost' : location.href
 
 /**
  * 绝对路径的链接，用于向用户展示
  */
-const absLink = computed(() => {
-  if (!import.meta.env.SSR) {
-    return new URL(props.link, location.href).href
-  }
+const fullLink = computed(() => {
+  return new URL(props.link, urlBase).href
 })
+
+const isThisLocation = computed(() => fullLink.value === new URL(route.path, urlBase).href)
 
 interface DestinationConfig {
   icon: string
@@ -35,11 +37,11 @@ interface DestinationConfig {
  * 目的地配置
  */
 const destinationConfig = computed<DestinationConfig | null>(() => {
-  if (!import.meta.env.SSR && absLink.value) {
-    switch (new URL(absLink.value).hostname) {
+  if (props.link) {
+    switch (new URL(props.link, urlBase).hostname) {
       case 'gitee.com': {
         return {
-          icon: GieeIcon,
+          icon: GiteeIcon,
           name: 'Gitee',
         }
       }
@@ -56,18 +58,18 @@ const destinationConfig = computed<DestinationConfig | null>(() => {
 </script>
 
 <template>
-  <VPLink class="ProjectCard" :href="link" :no-icon="true" :tag="link ? 'a' : 'div'" :alt="name">
+  <VPLink class="ProjectCard" :href="link" :no-icon="true" :tag="!isThisLocation && link ? 'a' : 'div'" :alt="name">
     <article class="box">
       <div class="head">
         <img class="icon" :src="icon" />
         <div class="headRight">
           <span class="name" v-html="name"></span>
-          <span class="link" :title="absLink">{{ absLink }}</span>
+          <span class="link" :title="link">{{ link }}</span>
         </div>
       </div>
       <p v-if="details" class="details" v-html="details"></p>
       <div class="space"></div>
-      <div class="foot">
+      <div v-if="!isThisLocation && link" class="foot">
         <template v-if="destinationConfig">
           <img class="icon" :src="destinationConfig.icon" />
           <span class="name">{{ destinationConfig.name }}</span>
