@@ -32,8 +32,7 @@ features:
 ---
 
 <!-- Since the home layout doesn't have a Markdown style, we have to add one manually. -->
-<div class="vp-doc external-link-icon-enabled container">
-
+<div class="vp-doc external-link-icon-enabled">
 
 ## Origin
 

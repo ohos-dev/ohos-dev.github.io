@@ -1,5 +1,4 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
 import { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme-without-fonts'
 import './styles/custom.scss'
@@ -13,4 +12,4 @@ export default {
     const { app } = ctx
     app.component('ProjectCard', ProjectCard)
   },
-} as Theme
+} satisfies Theme

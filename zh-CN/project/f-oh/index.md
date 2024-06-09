@@ -14,7 +14,7 @@ hero:
     alt: F-OH
   actions:
     - theme: brand
-      text: 下载安装
+      text: 下载
       link: https://gitee.com/westinyang/f-oh/releases
     - theme: alt
       text: 上传应用
@@ -43,7 +43,7 @@ features:
 <Home :data="data" />
 
 <!-- 由于 home 布局没有 Markdown 的样式，所以要手动添加一个样式 -->
-<div class="vp-doc external-link-icon-enabled container">
+<div class="vp-doc external-link-icon-enabled">
 
 ## 视频演示
 

@@ -35,7 +35,7 @@ features:
 ---
 
 <!-- 由于 home 布局没有 Markdown 的样式，所以要手动添加一个样式 -->
-<div class="vp-doc external-link-icon-enabled container">
+<div class="vp-doc external-link-icon-enabled">
 
 ## 起源
 

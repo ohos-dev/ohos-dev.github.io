@@ -1,3 +1,5 @@
 import { DefaultTheme } from 'vitepress'
 
-export type ThemeConfig = DefaultTheme.Config & { viewLabel: string }
+export interface ThemeConfig extends DefaultTheme.Config {
+  viewLabel: string
+}
