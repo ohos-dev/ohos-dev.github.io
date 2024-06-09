@@ -57,8 +57,7 @@ OpenHarmony 正在茁壮成长，虽然从 API 9 开始拥有完备的应用开�
 
 - 组织正式更名为“开鸿派”
 - 所有仓库转移至原作者账号下，并尝试建立一个新的秩序，开源项目列表参见此处：[awesome-ohos-project](https://gitee.com/ohos-dev/awesome-ohos-project)
-- 启用全新设计的 LOGO（开鸿的配色、**[F-OH](https://gitee.com/westinyang/f-oh)** 的圆圈、再加上一个派的谐音 π，也寓意着无限的可能~）
-- 相关视频：[正式更名开鸿派，OpenHarmony开源组织OHOSDev的成长之路](https://www.bilibili.com/video/BV1Ma4y1f7MD)
+- 启用全新设计的LOGO（[**F-OH**](https://gitee.com/westinyang/f-oh)图标的圆圈和背景配色互换、再加上一个派的谐音π，也寓意着无限的可能~）
 
 ## 愿景
 
